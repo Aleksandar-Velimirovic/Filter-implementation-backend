@@ -18,5 +18,7 @@ Route::get('/categories', 'ProductCategoryController@getCategories');
 Route::get('/category/attributes/filters/{categoryId}', 'ProductCategoryController@getProductCategoryFiltersById');
 Route::get('/products/category/{category_id}', 'ProductsController@getProductsByCategoryId');
 Route::get('/products/search/{searchTerm}', 'ProductsController@searchProductsOfAnyCategory');
+Route::get('/products/popular', 'ProductsController@getPopularProducts');
+
 
 
